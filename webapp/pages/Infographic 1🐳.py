@@ -41,7 +41,7 @@ else:
     st.write("Wrong")
     
     
-    
+st.header("there are more options")
     
 st.write("""
 these have just been tests \n
