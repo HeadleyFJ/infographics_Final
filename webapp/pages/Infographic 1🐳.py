@@ -33,8 +33,10 @@ bubble = st.radio(
     'What are good units to use?',
     ('SI', 'CGS', 'Blue Whales','Paperclips'))
 
-if bubble == 'Blue Whales' or 'Paperclips':
-    st.write('Correct')
+if bubble == 'Blue Whales':
+    st.write('Correct 1')
+elif bubble == 'Paperclips':
+    st.write('Correct 2')
 else:
     st.write("Wrong")
     
