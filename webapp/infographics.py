@@ -26,3 +26,6 @@ Is this an unprofessional way of writing this out?
 Yes... But i need to test if the website works
 and who in their right mind is going to see the 
 innital commit of this project""")
+
+    
+    
