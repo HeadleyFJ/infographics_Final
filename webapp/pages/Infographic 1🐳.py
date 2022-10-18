@@ -12,7 +12,7 @@ else:
     st.write('Not Pressed')
    
   
- st.header("this is a checkbox")
+st.header("this is a checkbox")
   
 checkbox = st.checkbox('check this box')
 
