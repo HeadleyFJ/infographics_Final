@@ -19,3 +19,27 @@ checkbox = st.checkbox('check this box')
 if checkbox:
     st.write('you did it!')
     
+
+    
+    
+select = st.selectbox(
+    'What are good units to use?',
+    ('SI', 'CGS', 'Blue Whales','Paperclips'))
+
+st.write('Yay', select)
+
+
+bubble = st.radio(
+    'What are good units to use?',
+    ('SI', 'CGS', 'Blue Whales','Paperclips'))
+
+if bubble == 'Blue Whales' or 'Paperclips':
+    st.write('Correct')
+else:
+    st.write("Wrong")
+    
+    
+    
+    
+    
+    
