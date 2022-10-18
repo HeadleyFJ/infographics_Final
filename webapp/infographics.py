@@ -3,7 +3,7 @@ import numpy as np
 import scipy as sp
 #%matplotlib inline
 import streamlit as st
-import matplotlib.pyplot.scatter
+
 
 
 
@@ -14,7 +14,7 @@ cupcakes = [0,1,1,1,2,4,6,6,8,11,12]
 
 st.header("I HAVE SO MANY CUPCAKES!")
 
-matplotlib.pyplot.scatter(time,cupcakes,c="black",marker='D',s=50)
+plt.scatter(time,cupcakes,c="black",marker='D',s=50)
 plt.xlabel('Time in days')
 plt.ylabel('Number of cupcakes I have')
 
