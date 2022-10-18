@@ -16,6 +16,6 @@ else:
   
 checkbox = st.checkbox('check this box')
 
-if agree:
+if checkbox:
     st.write('you did it!')
     
