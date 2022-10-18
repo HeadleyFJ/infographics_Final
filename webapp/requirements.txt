@@ -1,5 +1,5 @@
 
-matplotlib.pyplot
+matplotlib
 numpy
 scipy
 streamlit
