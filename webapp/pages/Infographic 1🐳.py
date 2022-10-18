@@ -43,5 +43,6 @@ else:
     
     
     
-    
-    
+st.write("""
+these have just been tests \n
+can also do number input, sliders, sliders with finite choices, date/time sliders""")
