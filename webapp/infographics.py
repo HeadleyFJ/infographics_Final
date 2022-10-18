@@ -6,6 +6,8 @@ st.set_page_config(
     page_icon="😎",
 )
 
+st.sidebar.success("Select an Infographic or the intro page.")
+
 st.header("I HAVE SO MANY CUPCAKES!")
 
 
