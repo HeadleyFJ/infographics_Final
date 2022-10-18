@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy as sp
-%matplotlib inline
+#%matplotlib inline
 import streamlit as st
 
 
