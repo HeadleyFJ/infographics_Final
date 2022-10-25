@@ -1,5 +1,5 @@
-Import streamlit as st
-"This is the gravity simulation infographic"
+# Import streamlit as st
+# "This is the gravity simulation infographic"
 
 import numpy as np
 import matplotlib.pyplot as plt
