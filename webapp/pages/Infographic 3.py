@@ -13,7 +13,8 @@ r_Earth = 6.4*(10**6)
 
 # conditions on the radius of the large body and the initial starting position
 M_planet = 1.5*M_Earth
-r_planet = 1.5*r_Earth
+r_planet = st.slider("Exoplanet Radius", 1.0, 5.0, 0.1)
+r_planet = r_planet*r_Earth
 s_initial_vertical = (1.5*r_planet)/r_Earth
 
 # these definitions are for the graph to plot out the shape of the exoplanet
