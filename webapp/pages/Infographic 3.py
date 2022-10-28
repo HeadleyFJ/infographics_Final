@@ -1,5 +1,5 @@
-# Import streamlit as st
-# "This is the gravity simulation infographic"
+Import streamlit as st
+"This is the gravity simulation infographic"
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -62,4 +62,5 @@ plt.ylabel("Radius (as a ratio of the Earth's radius)")
 # polar_ax.xaxis('off')
 polar_ax.axes.get_xaxis().set_visible(False)
 polar_ax.legend(loc=0)
-plt.show()
+
+st.plotly_chart(polar_ax, use_container_width=False, sharing="streamlit")
