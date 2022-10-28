@@ -27,9 +27,11 @@ planet_radius = (r_planet/r_Earth) + (0*theta)
 
 # initial conditions for the plot
 u = [0, 0]
-a = [0, -(G*M_planet)/(r_planet*r_planet)]
-s_Earth = s_initial_vertical + u[1]*theta + 0.5*a[1]*theta*theta
-s_planet = s_initial_vertical + u[1]*theta + 0.5*a[1]*theta*theta
+a_planet = [0, -(G*M_planet)/(r_planet*r_planet)]
+a_Earth = [0, -(G*M_Earth)/(r_Earth*r_Earth)]
+
+s_planet = s_initial_vertical + u[1]*theta + 0.5*a_planet[1]*theta*theta
+s_Earth = s_initial_vertical + u[1]*theta + 0.5*a_Earth[1]*theta*theta
 
 # line 1 on the plot, ends on the surface of Earth
 index = 0
@@ -51,10 +53,10 @@ polar_ax.set_theta_zero_location('N')
 polar_ax.set_theta_direction(-1)
 polar_ax.set_ylim((0*s_initial_vertical), (1.1*s_initial_vertical))
 polar_ax.set_xlim(0, (np.pi/2))
-plt.plot(theta, s_Earth, color='black', zorder=5)
-plt.plot(theta, s_planet, color='black', zorder=6)
-plt.plot(theta, planet_radius, color='grey', zorder=3)
-plt.fill_between(theta, planet_radius, alpha=0.7, color='grey', label='Radius of Exoplanet', zorder=2)
+plt.plot(theta, s_Earth, color='black', zorder=5, ls='--', label='Object on Earth')
+plt.plot(theta, s_planet, color='black', zorder=6, label='Object on Exoplanet')
+plt.plot(theta, planet_radius, color='grey',zorder=3)
+plt.fill_between(theta, planet_radius, alpha=0.5, color='grey', label='Radius of Exoplanet', zorder=2)
 plt.plot(theta, Earth_radius, color='blue',zorder=4)
 plt.fill_between(theta, Earth_radius, alpha=0.5, color='blue', label='Radius of Earth',zorder=1)
 # plt.yticklabels('')
