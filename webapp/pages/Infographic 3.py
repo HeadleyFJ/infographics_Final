@@ -1,4 +1,4 @@
-Import streamlit as st
+import streamlit as st
 "This is the gravity simulation infographic"
 
 import numpy as np
