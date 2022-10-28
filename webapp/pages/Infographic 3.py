@@ -63,4 +63,4 @@ plt.ylabel("Radius (as a ratio of the Earth's radius)")
 polar_ax.axes.get_xaxis().set_visible(False)
 polar_ax.legend(loc=0)
 
-st.pyplot(fig=None, clear_figure=None)
+st.pyplot(polar_ax, clear_figure=None)
