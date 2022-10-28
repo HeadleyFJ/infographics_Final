@@ -12,7 +12,8 @@ M_Earth = 6*(10**24)
 r_Earth = 6.4*(10**6)
 
 # conditions on the radius of the large body and the initial starting position
-M_planet = 1.5*M_Earth
+M_planet = st.slider("Exoplanet Mass", min_value = 1.0, max_value = 25.0, step = 1.0)
+M_planet = M_planet*M_Earth
 r_planet = st.slider("Exoplanet Radius", min_value = 1.0, max_value = 5.0, step = 0.1)
 r_planet = r_planet*r_Earth
 s_initial_vertical = (1.5*r_planet)/r_Earth
