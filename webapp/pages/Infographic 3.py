@@ -62,7 +62,7 @@ for position in s_Earth_vertical:
 bucket_location = 0.5*(s_Earth_horizontal[index]+s_Earth_horizontal[index+1])
 # print(bucket_location)
 
-fig = plt.figure(figsize=(20,8))
+fig = plt.figure(figsize=(20, 20))
 polar_ax = plt.subplot(2, 1, 1, projection='polar')
 polar_ax.set_theta_zero_location('N')
 polar_ax.set_theta_direction(-1)
