@@ -25,7 +25,10 @@ theta_list = [angle for angle in theta]
 # this angle will be pre-defined in the program
 angle = np.pi/4
 # this speed will be specified by the user
-new_speed = 150.
+new_speed = st.selectbox(
+  "Please select a speed for the projectile on the exoplanet"
+  ("10m/s", "100m/s", "1000m/s"))
+
 # this angle will need to be set to between 0 and pi/2
 new_angle = np.pi/3
 # the initial horizontal and vertical speed of the projectile on Earth
