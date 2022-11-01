@@ -40,7 +40,7 @@ Earth_radius = 1. + (0*theta)
 planet_radius = (r_planet/r_Earth) + (0*theta)
 
 # the opacity of the exoplanet will be related to it's mass, a darker/more opaque planet => more massive
-density = (0.3-(0.6/24.0)) + ((0.6/24.0) * (M_planet/M_Earth))
+density = (0.5-(0.4/24.0)) + ((0.4/24.0) * (M_planet/M_Earth))
                   
 # initial conditions for the plot
 a_planet = [0, -(G*M_planet)/(r_planet*r_planet)]
@@ -75,7 +75,7 @@ polar_ax.set_xlim(0, (np.pi/2))
 plt.plot(theta, planet_radius, color='grey', zorder=4)
 plt.fill_between(theta, planet_radius, alpha=density, color='grey', label='Radius of Exoplanet', zorder=1)
 plt.plot(theta, Earth_radius, color='blue', zorder=3)
-plt.fill_between(theta, Earth_radius, alpha=0.3, color='blue', label='Radius of Earth', zorder=2)
+plt.fill_between(theta, Earth_radius, alpha=0.5, color='blue', label='Radius of Earth', zorder=2)
 # # plt.yticklabels('')
 polar_ax.yaxis.grid(False)
 polar_ax.xaxis.grid(False)
@@ -86,7 +86,7 @@ polar_ax.legend(loc=0)
 
 cartesian_ax = plt.subplot(1, 2, 2)
 cartesian_ax.plot(s_planet_horizontal, s_planet_vertical, color='grey', alpha=density, ls='-', zorder=1)
-cartesian_ax.plot(s_Earth_horizontal, s_Earth_vertical, color='blue', alpha=0.3, ls='--', zorder=2)
+cartesian_ax.plot(s_Earth_horizontal, s_Earth_vertical, color='blue', alpha=0.5, ls='--', zorder=2)
 plt.ylabel('Height [m]')
 plt.xlabel('Horizontal Distance [m]')
 
