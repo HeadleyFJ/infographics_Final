@@ -19,7 +19,7 @@ r_planet = st.slider("Exoplanet Radius", min_value = 1.0, max_value = 5.0, step 
 r_planet = r_planet*r_Earth
 s_initial_vertical = (1.5*r_planet)/r_Earth
 # these definitions are for the graph to plot out the shape of the exoplanet
-theta = np.arange(0, ((np.pi/2) + (np.pi/720)), np.pi/720)
+theta = np.arange(0, ((np.pi/2) + (np.pi/36), np.pi/36)
 theta_list = [angle for angle in theta]
 
 # this angle will be pre-defined in the program
@@ -38,6 +38,9 @@ u_planet = [new_speed*math.cos(new_angle), new_speed*math.sin(new_angle)]
 Earth_radius = 1. + (0*theta)
 planet_radius = (r_planet/r_Earth) + (0*theta)
 
+# the opacity of the exoplanet will be related to it's mass, a darker/more opaque planet => more massive
+density = (0.3-(0.6/24.0)) + ((0.6/24.0) * (M_planet/M_Earth))
+                  
 # initial conditions for the plot
 a_planet = [0, -(G*M_planet)/(r_planet*r_planet)]
 a_Earth = [0, -(G*M_Earth)/(r_Earth*r_Earth)]
@@ -68,12 +71,10 @@ polar_ax.set_theta_zero_location('N')
 polar_ax.set_theta_direction(-1)
 polar_ax.set_ylim((0*s_initial_vertical), (1.1*planet_radius[0]))
 polar_ax.set_xlim(0, (np.pi/2))
-# plt.plot(theta, s_Earth, color='black', zorder=5)
-# plt.plot(theta, s_planet, color='black', zorder=6)
 plt.plot(theta, planet_radius, color='grey', zorder=4)
-plt.fill_between(theta, planet_radius, alpha=0.8, color='grey', label='Radius of Exoplanet', zorder=2)
+plt.fill_between(theta, planet_radius, alpha=density, color='grey', label='Radius of Exoplanet', zorder=1)
 plt.plot(theta, Earth_radius, color='blue', zorder=3)
-plt.fill_between(theta, Earth_radius, alpha=0.5, color='blue', label='Radius of Earth', zorder=1)
+plt.fill_between(theta, Earth_radius, alpha=0.3, color='blue', label='Radius of Earth', zorder=2)
 # # plt.yticklabels('')
 polar_ax.yaxis.grid(False)
 polar_ax.xaxis.grid(False)
