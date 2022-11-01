@@ -19,7 +19,7 @@ r_planet = st.slider("Exoplanet Radius", min_value = 1.0, max_value = 5.0, step 
 r_planet = r_planet*r_Earth
 s_initial_vertical = (1.5*r_planet)/r_Earth
 # these definitions are for the graph to plot out the shape of the exoplanet
-theta = np.arange(0, ((np.pi/2) + (np.pi/36), np.pi/36))
+theta = np.arange(0, ((np.pi/2) + (np.pi/36)), np.pi/36)
 theta_list = [angle for angle in theta]
 
 # this angle will be pre-defined in the program
