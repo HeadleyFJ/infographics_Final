@@ -85,8 +85,8 @@ polar_ax.axes.get_xaxis().set_visible(False)
 polar_ax.legend(loc=0)
 
 cartesian_ax = plt.subplot(1, 2, 2)
-cartesian_ax.plot(s_planet_horizontal, s_planet_vertical, color='grey', ls='-', zorder=1)
-cartesian_ax.plot(s_Earth_horizontal, s_Earth_vertical, color='blue', alpha=0.5, ls='--', zorder=2)
+cartesian_ax.plot(s_planet_horizontal, s_planet_vertical, color='grey', alpha=density, ls='-', zorder=1)
+cartesian_ax.plot(s_Earth_horizontal, s_Earth_vertical, color='blue', alpha=0.3, ls='--', zorder=2)
 plt.ylabel('Height [m]')
 plt.xlabel('Horizontal Distance [m]')
 
