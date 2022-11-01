@@ -47,7 +47,7 @@ a_Earth = [0, -(G*M_Earth)/(r_Earth*r_Earth)]
 
 s_initial = [0, 0]
 
-time = np.arange(0, 33, 0.01)
+time = np.arange(0, 33, 0.1)
 
 s_planet_horizontal = [s_initial[0] + u_planet[0]*t + 0.5*a_planet[0]*t*t for t in time]
 s_planet_vertical = [s_initial[1] + u_planet[1]*t + 0.5*a_planet[1]*t*t for t in time]
