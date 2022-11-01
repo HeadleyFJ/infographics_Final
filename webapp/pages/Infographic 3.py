@@ -82,6 +82,7 @@ plt.ylabel("Radius $ \dfrac{r_{planet}}{r_{Earth}} $")
 # polar_ax.xaxis('off')
 polar_ax.axes.get_xaxis().set_visible(False)
 polar_ax.legend(loc=0)
+plt.close()
 
 cartesian_ax = plt.subplot(1, 1, 1)
 cartesian_ax.plot(s_planet_horizontal, s_planet_vertical, color='grey', ls='-', zorder=1)
