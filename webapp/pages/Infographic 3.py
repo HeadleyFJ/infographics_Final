@@ -94,7 +94,7 @@ cartesian_ax.axvspan(xmin=0.95*bucket_location, xmax=1.05*bucket_location, ymin=
 y_limit = max(max(s_planet_vertical), max(s_Earth_vertical))
 cartesian_ax.set_ylim(0, 1.5*y_limit)
 cartesian_ax.set_xlim(0, 1.5*bucket_location)
-plt.legend(['Path of object being projected on the exoplanet', 'Path of the object being projected on Earth', 'Target location between {:.1f}m and {:.1f}m'.format(0.95*bucket_location, 1.05*bucket_location)], loc=0)
+plt.legend(['Path on exoplanet', 'Path on Earth', 'Target location', loc=0)
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot(fig=None, clear_figure=None)
