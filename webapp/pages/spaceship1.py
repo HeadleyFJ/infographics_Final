@@ -1,7 +1,7 @@
 import rebound
 import streamlit as st
 import pandas as pd
-import datetime
+from datetime import datetime
 import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 
