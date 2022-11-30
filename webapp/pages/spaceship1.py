@@ -15,7 +15,7 @@ em_bodies = []
 em_body_type = []
 em_colour = []
 
-csv = pd.read_csv("spaceships_vnc.csv")
+csv = pd.read_csv("webapp/.data/spaceships_vnc.csv")
 
 sim = rebound.Simulation()
 
