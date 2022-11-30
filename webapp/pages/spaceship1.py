@@ -21,7 +21,7 @@ sim = rebound.Simulation()
 
 d = st.date_input(
     "Pick a date",
-    value = datetime.today())
+    value = datetime.today(),min_value = "1960-01-01")
 d = str(d)
 
 date_check = datetime.fromisoformat(d)
