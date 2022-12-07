@@ -48,6 +48,6 @@ if option =='pluto':
         sim.add(str(i))
         
 sim.move_to_com()
-op = rebound.OrbitPlot(sim)
+op = rebound.OrbitPlotSet(sim)
 st.header("moons")
 st.pyplot(op.fig)
