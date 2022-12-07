@@ -46,7 +46,8 @@ if option =='pluto':
     sim.add("999", hash = "Pluto")
     for i in range(901,906):
         sim.add(str(i))
-
+        
+sim.move_to_com()
 op = rebound.OrbitPlot(sim)
 st.header("moons")
 st.pyplot(op.fig)
