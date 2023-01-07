@@ -5,6 +5,14 @@ from datetime import datetime
 import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 
+
+st.set_page_config(
+    page_title="Satellites",
+    page_icon="🛰",
+)
+
+
+
 ss_body_type = []
 ss_colour = []
 ess_colour = []
