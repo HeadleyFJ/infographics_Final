@@ -177,8 +177,8 @@ with col_em:
    st.write("Earth: Star")
    if satalite == False:
         st.write("Moon: Gray")
-   for i in em_name:
-        st.write(em_name)
+   for i in range(len(em_name)):
+        st.write(em_name[i])
         
    
 with col_ss:
