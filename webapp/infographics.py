@@ -3,7 +3,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Infographic Project",
-    page_icon="🛰️",
+    page_icon="📡",
 )
 
 st.sidebar.success("Select an Infographic or the intro page.")
