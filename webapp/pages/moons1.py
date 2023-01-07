@@ -5,6 +5,11 @@ import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 
 
+st.set_page_config(
+    page_title="Moons",
+    page_icon="🌕",
+)
+
 
 option = st.selectbox(
     'What planet\'s moons would you like to see',
