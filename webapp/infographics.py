@@ -22,11 +22,13 @@ st.header("Fin Headley's Infographic Project")
 
 
 st.write("""
+\n\n\n\n\n\n\n\n\n\n\n\n
 From the sidebar select one of two infographics. 
-\n
+\n\n\n\n\n\n\n\n
 Satellites will display the location of any satellites at any time chosen by the user.
-\n
-Moons will display all the orbiting moons of any plannet in the solar system.""")
+\n\n\n\n\n\n\n\n
+Moons will display all the orbiting moons of any plannet in the solar system.
+\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n""")
 
 
 
