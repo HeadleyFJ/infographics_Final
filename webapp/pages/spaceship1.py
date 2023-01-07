@@ -169,9 +169,9 @@ with col_ss:
    st.pyplot(op2.fig)
    if planets:
         st.write("""
-        Mercury: gray \n
-        Venus: brown \n
-        Earth: blue \n
+        Mercury: gray
+        Venus: brown
+        Earth: blue
         Mars: red
         """)
 with col_ess:
