@@ -168,7 +168,7 @@ with col_ss:
    st.header("Inner Solar System")
    st.pyplot(op2.fig)
    st.markdown("***")
-   st.write("Outputted objects:)
+   st.write("Outputted objects")
    st.markdown("***")
    st.write("Star: Sun")
    if planets:
