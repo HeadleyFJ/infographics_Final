@@ -144,6 +144,7 @@ if satalite == False:
 #never integrate ever!
 op1 = rebound.OrbitPlot(simearth, particles = em_bodies)
 op1.particles.set_color(em_colour)
+fig1 = plt.plot(op1)
 #for i in range(len(em_body_type)):
   #if em_body_type[i] == "Spaceship":
     #op1.orbits[i].set_linestyle("dashed")
@@ -163,7 +164,7 @@ op3.particles.set_color(ess_colour)
 col_em, col_ss, col_ess= st.columns(3)
 with col_em:
    st.header("Earth Moon System")
-   st.pyplot(op1.fig,title="cake")
+   st.pyplot(fig1)
 with col_ss:
    st.header("Solar System")
    st.pyplot(op2.fig)
