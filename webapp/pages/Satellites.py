@@ -164,12 +164,19 @@ col_em, col_ss, col_ess= st.columns(3)
 with col_em:
    st.header("Earth-Moon System")
    st.pyplot(op1.fig)
+   st.markdown("***")
+   st.write("Objects shown:\n")
+   st.write("Earth: Star")
+   if satalite == False:
+        st.write("Moon: Gray")
+        
+   
 with col_ss:
    st.header("Inner Solar System")
    st.pyplot(op2.fig)
    st.markdown("***")
-   st.write("Outputted objects:\n")
-   st.write("Star: Sun")
+   st.write("Objects shown:\n")
+   st.write("Sun: Star")
    if planets:
         st.write("""
         Mercury: Gray   \n
@@ -182,8 +189,8 @@ with col_ess:
    st.header("Extra Solar System")
    st.pyplot(op3.fig)
    st.markdown("***")
-   st.write("Outputted objects:\n")
-   st.write("Star: Sun")
+   st.write("Objects shown:\n")
+   st.write("Sun: Star")
    if planets:
         st.write("""
         Jupiter: Orange   \n
