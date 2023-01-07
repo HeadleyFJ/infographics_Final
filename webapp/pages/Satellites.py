@@ -24,11 +24,13 @@ ess_bodies = []
 em_bodies = []
 em_body_type = []
 em_colour = []
+ss_name = []
+ess_name = []
+em_name = []
 
 csv = pd.read_csv("webapp/.data/spaceships_vnc.csv")
 
 sim = rebound.Simulation()
-
 simearth = rebound.Simulation()
 
 
@@ -91,6 +93,7 @@ for i in range(len(csv)):
     if str(csv.loc[i,'plot']) == "ess":
         
         id = str(csv.loc[i,'id'])
+        name = str(csv.loc[i,'name'])
 
         interval_start = str(csv.loc[i,'interval_start'])
         interval_end = str(csv.loc[i,'interval_end'])
@@ -102,10 +105,12 @@ for i in range(len(csv)):
             ess_bodies.append(id)
             ess_body_type.append("Spaceship")
             ess_colour.append("Black")
+            ess_name.append(name)
 
     if str(csv.loc[i,'plot']) == "ss":
         
         id = str(csv.loc[i,'id'])
+        name = str(csv.loc[i,'name'])
 
         interval_start = str(csv.loc[i,'interval_start'])
         interval_end = str(csv.loc[i,'interval_end'])
@@ -117,11 +122,13 @@ for i in range(len(csv)):
             ss_bodies.append(id)
             ss_body_type.append("Spaceship")
             ss_colour.append("Black")
+            ss_name.append(name)
 
     if str(csv.loc[i,'plot']) == "em":
         
         id = str(csv.loc[i,'id'])
-
+        name = str(csv.loc[i,'name'])
+        
         interval_start = str(csv.loc[i,'interval_start'])
         interval_end = str(csv.loc[i,'interval_end'])
         date_start = datetime.fromisoformat(interval_start)
@@ -132,6 +139,7 @@ for i in range(len(csv)):
             em_bodies.append(id)
             em_body_type.append("Spaceship")
             em_colour.append("Black")
+            em_name.append(name)
             satalite = True
 
 
@@ -169,6 +177,8 @@ with col_em:
    st.write("Earth: Star")
    if satalite == False:
         st.write("Moon: Gray")
+   for i in em_name:
+        st.write(em_name[i])
         
    
 with col_ss:
