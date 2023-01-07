@@ -207,7 +207,7 @@ with col_ss:
         st.write(ss_name[i])
     
 with col_ess:
-   st.header("Extra Solar System")
+   st.header("Outer Solar System")
    st.pyplot(op3.fig)
    st.markdown("***")
    st.write("Objects shown:\n")
