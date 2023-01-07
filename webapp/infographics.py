@@ -2,13 +2,13 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="Infographics",
-    page_icon="😎",
+    page_title="Infographic Project",
+    page_icon="🛰️",
 )
 
 st.sidebar.success("Select an Infographic or the intro page.")
 
-st.header("I HAVE SO MANY CUPCAKES!")
+st.header("Fin Headley's infographic Project")
 
 
 with st.expander("This talks more about cupcakes."):
