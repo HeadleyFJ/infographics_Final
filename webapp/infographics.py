@@ -6,6 +6,9 @@ st.set_page_config(
     page_icon="📡",
 )
 
+
+st.write("[![Star](<https://img.shields.io/github/stars/><username>/<repo>.svg?logo=github&style=social)](<https://gitHub.com/><HeadleyFJ>/<infographics_Final>)")
+
 st.sidebar.success("Select an Infographic or the intro page.")
 
 st.header("Fin Headley's infographic Project")
