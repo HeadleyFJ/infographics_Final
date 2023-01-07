@@ -48,9 +48,9 @@ planets = st.checkbox('Planets', value = True)
 sim.add("Sun",date=d)
 
 simearth.add("Earth",date=d)
-em_bodies.append("Earth")
-em_body_type.append("Planet")
-em_colour.append("Blue")
+#em_bodies.append("Earth")
+#em_body_type.append("Planet")
+#em_colour.append("Blue")
 
 if planets:
    sim.add("199", hash = "Mercury", date = d)
