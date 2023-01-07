@@ -34,6 +34,11 @@ sim = rebound.Simulation()
 simearth = rebound.Simulation()
 
 
+st.header("Satellites")
+
+st.write("Pick any date and watch as all satallites listed in the JPL Horizons database are plotted accurately.")
+
+
 d = st.date_input(
     "Pick a date",
     #value = datetime.today(),min_value = datetime.fromisoformat("1960-01-01"))
