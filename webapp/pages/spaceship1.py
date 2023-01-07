@@ -148,13 +148,13 @@ op1.particles.set_color(em_colour)
   #if em_body_type[i] == "Spaceship":
     #op1.orbits[i].set_linestyle("dashed")
 
-op2 = rebound.OrbitPlot(sim,  particles = ss_bodies)
+op2 = rebound.OrbitPlot(sim,  particles = ss_bodies,unitlabel="[AU]")
 op2.particles.set_color(ss_colour)
 #for i in range(len(ss_body_type)):
   #if ss_body_type[i] == "Spaceship":
     #op2.orbits[i].set_linestyle("dashed")
     
-op3 = rebound.OrbitPlot(sim,  particles = ess_bodies)
+op3 = rebound.OrbitPlot(sim,  particles = ess_bodies,unitlabel="[AU]")
 op3.particles.set_color(ess_colour)
 #for i in range(len(ess_body_type)):
   #if ess_body_type[i] == "Spaceship":
@@ -162,11 +162,18 @@ op3.particles.set_color(ess_colour)
 
 col_em, col_ss, col_ess= st.columns(3)
 with col_em:
-   st.header("Earth Moon System")
+   st.header("Earth-Moon System")
    st.pyplot(op1.fig)
 with col_ss:
-   st.header("Solar System")
+   st.header("Inner Solar System")
    st.pyplot(op2.fig)
+   if planets:
+        st.write("""
+        Mercury: gray \n
+        Venus: brown \n
+        Earth: blue \n
+        Mars: red
+        """)
 with col_ess:
    st.header("Extra Solar System")
    st.pyplot(op3.fig)
