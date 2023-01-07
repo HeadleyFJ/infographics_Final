@@ -178,7 +178,7 @@ with col_em:
    if satalite == False:
         st.write("Moon: Gray")
    for i in em_name:
-        st.write(em_name[i])
+        st.write(em_name)
         
    
 with col_ss:
