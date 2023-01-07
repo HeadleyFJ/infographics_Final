@@ -22,7 +22,7 @@ st.header("Fin Headley's Infographic Project")
 
 
 st.write("""
-In the sidebar there are options for two info graphics. 
+From the sidebar select one of two infographics. 
 \n
 Satellites will display the location of any satellites at any time chosen by the user.
 \n
