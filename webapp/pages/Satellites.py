@@ -122,12 +122,12 @@ for i in range(len(csv)):
         date_start = datetime.fromisoformat(interval_start)
         date_end = datetime.fromisoformat(interval_end)
 
-        #if date_start<date_check<date_end:
-            #sim.add(id, hash=id, date = d)
-            #ss_bodies.append(id)
-            #ss_body_type.append("Spaceship")
-            #ss_colour.append("Black")
-            #ss_name.append(name)
+        if date_start<date_check<date_end:
+            sim.add(id, hash=id, date = d)
+            ss_bodies.append(id)
+            ss_body_type.append("Spaceship")
+            ss_colour.append("Black")
+            ss_name.append(name)
 
     if str(csv.loc[i,'plot']) == "em":
         
