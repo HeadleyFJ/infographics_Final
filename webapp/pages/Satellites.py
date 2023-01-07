@@ -177,6 +177,8 @@ with col_em:
    st.write("Earth: Star")
    if satalite == False:
         st.write("Moon: Gray")
+   st.markdown("***")
+   st.write("Satellites:")
    for i in range(len(em_name)):
         st.write(em_name[i])
         
@@ -194,6 +196,10 @@ with col_ss:
         Earth: Blue \n
         Mars: Red   \n
         """)
+   st.markdown("***")
+   st.write("Satellites:")
+   for i in range(len(ss_name)):
+        st.write(ss_name[i])
     
 with col_ess:
    st.header("Extra Solar System")
@@ -208,7 +214,10 @@ with col_ess:
         Uranus: Green \n
         Neptune: Blue   \n
         """)
-    
+   st.markdown("***")
+   st.write("Satellites:")
+   for i in range(len(ess_name)):
+        st.write(ess_name[i])
 
     
     
