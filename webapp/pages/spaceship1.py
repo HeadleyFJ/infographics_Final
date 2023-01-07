@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(
     page_title="Satellites",
     page_icon="🛰",
+    initial_sidebar_state="expanded"
 )
 
 
@@ -30,7 +31,7 @@ sim = rebound.Simulation()
 d = st.date_input(
     "Pick a date",
     #value = datetime.today(),min_value = datetime.fromisoformat("1960-01-01"))
-    value = datetime.fromisoformat("1960-01-01"),min_value = datetime.fromisoformat("1960-01-01"),max_value = datetime.fromisoformat("2027-01-01"))
+    value = datetime.fromisoformat("1950-01-01"),min_value = datetime.fromisoformat("1950-01-01"),max_value = datetime.fromisoformat("2027-01-01"))
 d = str(d)
 
 date_check = datetime.fromisoformat(d)
