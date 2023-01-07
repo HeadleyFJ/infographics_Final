@@ -13,26 +13,24 @@ st.sidebar.success("Select an Infographic or the Info page.")
 
 st.header("Fin Headley's Infographic Project")
 
-#with st.expander("This talks more about cupcakes."):
-#    st.write("""
-#Is this an unprofessional way of writing this out?
-#Yes... But i need to test if the website works
-#and who in their right mind is going to see the 
-#innital commit of this project""")
+st.text("")
+st.text("")
+st.text("")
 
 
-st.write("""
-\n
-From the sidebar select one of two infographics. 
-\n
-Satellites will display the location of any satellites at any time chosen by the user.
-\n
-Moons will display all the orbiting moons of any plannet in the solar system.
-\n""")
+st.write("From the sidebar select one of two infographics.")
 
-
+st.text("")
 st.markdown("***")
+st.text("")
+
+st.write("Moons will display all the orbiting moons of any plannet in the solar system.")
+st.text("")
+st.write("Satellites will display the location of any satellites at any time chosen by the user.")
+st.text("")
+st.text("")
 st.markdown("***")
+st.text("")
 
 with st.expander("Acknowledgments"):
     st.write("""
