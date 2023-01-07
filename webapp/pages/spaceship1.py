@@ -138,21 +138,21 @@ if satalite == False:
 #never integrate ever!
 op1 = rebound.OrbitPlot(sim, particles = em_bodies)
 op1.particles.set_color(em_colour)
-for i in range(len(em_body_type)):
-  if em_body_type[i] == "Spaceship":
-    op1.orbits[i].set_linestyle("dashed")
+#for i in range(len(em_body_type)):
+  #if em_body_type[i] == "Spaceship":
+    #op1.orbits[i].set_linestyle("dashed")
 
 op2 = rebound.OrbitPlot(sim,  particles = ss_bodies)
 op2.particles.set_color(ss_colour)
-for i in range(len(ss_body_type)):
-  if ss_body_type[i] == "Spaceship":
-    op2.orbits[i].set_linestyle("dashed")
+#for i in range(len(ss_body_type)):
+  #if ss_body_type[i] == "Spaceship":
+    #op2.orbits[i].set_linestyle("dashed")
     
 op3 = rebound.OrbitPlot(sim,  particles = ess_bodies)
 op3.particles.set_color(ess_colour)
-for i in range(len(ess_body_type)):
-  if ess_body_type[i] == "Spaceship":
-    op2.orbits[i].set_linestyle("dashed")
+#for i in range(len(ess_body_type)):
+  #if ess_body_type[i] == "Spaceship":
+    #op2.orbits[i].set_linestyle("dashed")
 
 col_em, col_ss, col_ess= st.columns(3)
 with col_em:
