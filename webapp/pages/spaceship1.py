@@ -167,12 +167,16 @@ with col_em:
 with col_ss:
    st.header("Inner Solar System")
    st.pyplot(op2.fig)
+   st.markdown("***")
+   st.write("Outputted objects:)
+   st.markdown("***")
+   st.write("Star: Sun")
    if planets:
         st.write("""
-        Mercury: gray
-        Venus: brown
-        Earth: blue
-        Mars: red
+        Gray: Mercury   \n
+        Brown: Venus    \n
+        Blue: Earth \n
+        Red: Mars   \n
         """)
 with col_ess:
    st.header("Extra Solar System")
