@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 st.set_page_config(
     page_title="Satellites",
     page_icon="🛰",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
+    layout="wide"
 )
 
 
@@ -28,6 +29,9 @@ csv = pd.read_csv("webapp/.data/spaceships_vnc.csv")
 
 sim = rebound.Simulation()
 
+simearth = rebound.Simulation()
+
+
 d = st.date_input(
     "Pick a date",
     #value = datetime.today(),min_value = datetime.fromisoformat("1960-01-01"))
@@ -43,6 +47,11 @@ planets = st.checkbox('Planets', value = True)
    
 sim.add("Sun",date=d)
 
+simearth.add("Earth",date=d)
+em_bodies.append("Earth")
+em_body_type.append("Planet")
+em_colour.append("Blue")
+
 if planets:
    sim.add("199", hash = "Mercury", date = d)
    ss_bodies.append("Mercury")
@@ -56,9 +65,6 @@ if planets:
    ss_bodies.append("Earth")
    ss_body_type.append("Planet")
    ss_colour.append("Blue")
-   em_bodies.append("Earth")
-   em_body_type.append("Planet")
-   em_colour.append("Blue")
    sim.add("499", hash = "Mars", date = d)
    ss_bodies.append("Mars")
    ss_body_type.append("Planet")
@@ -122,7 +128,7 @@ for i in range(len(csv)):
         date_end = datetime.fromisoformat(interval_end)
 
         if date_start<date_check<date_end:
-            sim.add(id, hash=id, date = d)
+            simearth.add(id, hash=id, date = d)
             em_bodies.append(id)
             em_body_type.append("Spaceship")
             em_colour.append("Black")
@@ -130,13 +136,13 @@ for i in range(len(csv)):
 
 
 if satalite == False:
-    sim.add("301", hash = "Moon", date = d)
+    simearth.add("301", hash = "Moon", date = d)
     em_bodies.append("Moon")
     em_body_type.append("Moon")
     em_colour.append("Grey")
 
 #never integrate ever!
-op1 = rebound.OrbitPlot(sim, particles = em_bodies)
+op1 = rebound.OrbitPlot(simearth, particles = em_bodies)
 op1.particles.set_color(em_colour)
 #for i in range(len(em_body_type)):
   #if em_body_type[i] == "Spaceship":
