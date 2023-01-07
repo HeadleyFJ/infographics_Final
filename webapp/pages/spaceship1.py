@@ -163,7 +163,7 @@ op3.particles.set_color(ess_colour)
 col_em, col_ss, col_ess= st.columns(3)
 with col_em:
    st.header("Earth Moon System")
-   st.pyplot(op1.fig)
+   st.pyplot(op1.fig,title="cake")
 with col_ss:
    st.header("Solar System")
    st.pyplot(op2.fig)
