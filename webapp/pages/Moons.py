@@ -54,5 +54,5 @@ if option =='pluto':
         
 sim.move_to_com()
 op = rebound.OrbitPlotSet(sim)
-st.header("moons")
+st.header("Selected Planet and Moons")
 st.pyplot(op.fig)
