@@ -34,7 +34,7 @@ if option =='jupiter':
 
 if option =='saturn':
     sim.add("699", hash = "Saturn")
-    for i in range(601,630):
+    for i in range(601,667):
         sim.add(str(i))
 
 if option =='uranus':
