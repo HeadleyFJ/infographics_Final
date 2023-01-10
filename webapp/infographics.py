@@ -37,9 +37,9 @@ st.text("")
 
 with st.expander("Acknowledgments"):
     st.write("""
-         I would like to thank my partner Adam Threlfall, \n
-         as well as my entire group, Benjamin Fry, Charlie Brayson, \n
-         Helena Krabberoed, pallavi Sati, Shachar Jacobson, \n
-         Sharath Kunhim Veedu Nambiar, as well as my superviser Chris North, \n
+         I would like to thank my partner Adam Threlfall, 
+         as well as my entire group, Benjamin Fry, Charlie Brayson, 
+         Helena Krabberoed, pallavi Sati, Shachar Jacobson, 
+         Sharath Kunhim Veedu Nambiar, as well as my superviser Chris North, 
          who were all an intergeral part of this project.""")
     
