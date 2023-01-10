@@ -56,7 +56,7 @@ if option =='pluto':
         
 sim.move_to_com()
 op = rebound.OrbitPlotSet(sim,unitlabel="[AU]")
-st.header("Selected Planet and Moons")
+st.header("Selected Planet and its Moons")
 st.pyplot(op.fig)
 st.write("The main plot shows the orbit of the moons around the ecliptic plane.")
 st.write("The top plot shows the orbit of the moons in the X and Z dimentions, relative to the ecliptic plane.")
