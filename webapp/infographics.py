@@ -11,9 +11,12 @@ st.set_page_config(
 
 st.sidebar.success("Select an Infographic or the Info page.")
 
-st.header("Fin Headley's Infographic Project")
+st.header("PXT991 Infographics")
 
 st.text("")
+st.text("")
+
+st.write("Fin Headley")
 st.text("")
 st.text("")
 
@@ -24,7 +27,7 @@ st.text("")
 st.markdown("***")
 st.text("")
 
-st.write("Moons will display all the orbiting moons for any plannet in the solar system.")
+st.write("Moons will display all the orbiting moons for any planet in the solar system.")
 st.text("")
 st.write("Satellites will display the location of all satellites at a time chosen by the user.")
 st.text("")
@@ -34,5 +37,9 @@ st.text("")
 
 with st.expander("Acknowledgments"):
     st.write("""
-         I would like to thank my entire group, as well as my superviser Chris North, who were an integeral part of this project.""")
+         I would like to thank my partner Adam Threlfall, \n
+         as well as my entire group, Benjamin Fry, Charlie Brayson, \n
+         Helena Krabberoed, pallavi Sati, Shachar Jacobson, \n
+         Sharath Kunhim Veedu Nambiar, as well as my superviser Chris North, \n
+         who were all an intergeral part of this project.""")
     
