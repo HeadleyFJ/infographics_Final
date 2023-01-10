@@ -10,10 +10,12 @@ st.set_page_config(
     page_icon="🌕",
 )
 
+st.header("Moons")
 
 option = st.selectbox(
     'What planet and its moons would you like to see?',
     ('earth', 'mars', 'jupiter','saturn','uranus','neptune','pluto'))
+
 
 
 sim = rebound.Simulation()
