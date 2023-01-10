@@ -65,7 +65,6 @@ id,name,interval_start,interval_end,plot,mission_info
 -165,WMAP,2001-06-30 21:15:04,2009-04-07 10:16:05,em,
 -168,Mars2020  Perserverance,2020-07-30 12:52:43,2026-02-19 00:00:00,ss,mars
 -170,James Webb Space Telescope  [JWST],2021-12-25 13:01:09,2024-11-28 00:01:09,em,l2
--176,GRAIL-SS Second Stage,2011-09-12 00:06:06,2061-08-30 00:06:06,em,
 -177,GRAIL-A  [Ebb],2011-09-10 13:09:58,2012-12-17 22:29:54,em,moon
 -178,Nozomi  [Planet-B],1999-02-08 12:01:04,2003-12-14 00:00:00,ss,
 -181,GRAIL-B  [Flow],2011-09-10 13:09:58,2012-12-17 22:30:23,em,moon
@@ -84,7 +83,6 @@ id,name,interval_start,interval_end,plot,mission_info
 -344,Galileo Probe,1995-07-13 05:31:02,1995-12-07 22:07:00,ss,jupiter
 -486,Herschel Space Observatory,2009-05-14 13:39:04,2050-01-01 00:01:07,em,l2
 -489,Planck Space Observatory,2009-05-14 13:41:35,2050-01-01 00:01:07,em,l2
--490,Lucy Centaur RB Booster  [2021-093B],2021-10-20 00:00,2050-01-03 00:00,em,
 -530,Mars Pathfinder  [MPF],1997-02-04 02:30:59,1999-01-01 00:00:00,ss,
 -557,Spektr-R Observatory,2011-06-18 06:08:05,2022-12-02 03:21:46,em,
 -610,Juno Centaur Stage,2011-08-05 18:13:57,2111-08-06 18:13:57,ss,
