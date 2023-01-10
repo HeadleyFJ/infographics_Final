@@ -26,7 +26,7 @@ st.text("")
 
 st.write("Moons will display all the orbiting moons for any plannet in the solar system.")
 st.text("")
-st.write("Spacecraft will display the location of all Spacecraft at a time chosen by the user.")
+st.write("Satellites will display the location of all satellites at a time chosen by the user.")
 st.text("")
 st.text("")
 st.markdown("***")
