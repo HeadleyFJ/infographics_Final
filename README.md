@@ -2,6 +2,8 @@
 
 DI Astronomy (and DI Physics) Infographics Micro-Project
 
+Fin Headley
+
 Friedman Group
 
 
