@@ -12,7 +12,7 @@ st.set_page_config(
 
 
 option = st.selectbox(
-    'What planet\'s moons would you like to see',
+    'What planet and its moons would you like to see?',
     ('earth', 'mars', 'jupiter','saturn','uranus','neptune','pluto'))
 
 
