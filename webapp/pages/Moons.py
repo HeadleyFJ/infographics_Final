@@ -56,3 +56,8 @@ sim.move_to_com()
 op = rebound.OrbitPlotSet(sim,unitlabel="[AU]")
 st.header("Selected Planet and Moons")
 st.pyplot(op.fig)
+st.write("The main plot shows the orbit of the moons around the ecliptic plane of their planet.")
+st.write("The top plot shows the orbit of the moons in the X and Z dimentions, relative to the ecliptic plane.")
+st.write("The top plot shows the orbit of the moons in the Y and Z dimentions, relative to the ecliptic plane.")
+st.write("Taken together, these three plots describe the 3D location of the moon(s) around their host planet.")
+
